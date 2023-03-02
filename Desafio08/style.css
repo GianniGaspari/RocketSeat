@@ -23,8 +23,17 @@ body {
 }
 
 #app {
+    background-color: #292738;
+
     display: grid;
-    grid-template-columns: max-content max-content max-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 5.9rem;
+
+    padding: 11.2rem 12.3rem;
+
+    width: 100vw;
+    height: 100vh;
 }
 
 .box:nth-child(4) {
