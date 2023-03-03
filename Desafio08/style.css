@@ -12,6 +12,11 @@
 
 body {
     font-size: 1.6rem;  /* 1rem = 1.0rem */
+    font-family: 'Inter', sans-serif;
+}
+
+.grid {
+    display: grid;
 }
 
 .box {
@@ -20,20 +25,26 @@ body {
     background: #363447;
     box-shadow: 0.3rem 0.4rem 2.6rem rgba(0, 0, 0, 0.25);
     border-radius: 1.6rem;
+    color: white;
+    line-height: 160%;
 }
 
 #app {
     background-color: #292738;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* display: grid; */
+    grid-template-columns: 29.6rem max-content max-content;
+    grid-template-rows: max-content;
     column-gap: 3.2rem;
     row-gap: 5.9rem;
 
-    padding: 11.2rem 12.3rem;
+    /* padding: 11.2rem 12.3rem; */
+    place-content: center;
 
-    width: 100vw;
-    height: 100vh;
+    width: fit-content;
+    height: fit-content;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 .box:nth-child(4) {
@@ -42,4 +53,38 @@ body {
     grid-column-end: 4; */
 }
 
+.top {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
 
+.bottom {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.bottom .item {
+    display: flex;
+    gap: 1rem;
+}
+
+.nps {
+    gap: 3.2rem
+}
+
+.nps .middle {
+    height: 19.7rem;
+    place-content: center;
+    justify-items: center;
+    gap: 1.6rem;
+    color: #81FBB8;
+}
+
+.nps .bottom {
+    font-weight: 500;
+    font-size: 14px;
+    gap: 1rem;
+}
