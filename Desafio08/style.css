@@ -165,10 +165,19 @@ svg circle:nth-child(2) {
     }
 }
 
-.hover:hover {
+.expand1:hover {
+    transform: scale(1.02);
+    /* opacity: 90%; */
+}
+
+.expand2:hover {
     cursor: pointer;
     transform: scale(1.05);
-    /* opacity: 90%; */
+}
+
+.expand3:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 .weekly-sell {
