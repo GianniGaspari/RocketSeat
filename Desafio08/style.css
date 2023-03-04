@@ -11,7 +11,7 @@
 }
 
 body {
-    font-size: 1.6rem;  /* 1rem = 1.0rem */
+    font-size: 1.6rem;  1rem = 1.0rem */
     font-family: 'Inter', sans-serif;
 }
 
@@ -106,3 +106,32 @@ body {
 .nps .bottom {
     gap: 1rem;
 }
+
+.middle {
+    display: grid;
+    place-content: center;
+}
+
+svg {
+    --circunference: 618;
+    --percentage: 0;
+    width: 19.7rem;
+    height: 19.7rem;
+    transform: rotate(-90deg);
+}
+
+svg circle {
+    stroke-dasharray: var(--circunference);
+    stroke-dashoffset: var(--circunference);
+    stroke-width: 35;
+    fill: none;
+}
+
+svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+}
+
+svg circle:nth-child(2) {
+    stroke-dashoffset: calc(var(--circunference) - (var(--circunference) * var(--percentage))/100);
+    stroke-linecap: round;
+} 
