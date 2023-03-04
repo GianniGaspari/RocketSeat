@@ -11,8 +11,9 @@
 }
 
 body {
-    font-size: 1.6rem;  1rem = 1.0rem */
+    font-size: 1.6rem;  /*1rem = 1.0rem */
     font-family: 'Inter', sans-serif;
+    background: #292738;
 }
 
 .grid {
@@ -227,4 +228,74 @@ svg circle:nth-child(2) {
 
 .pad {
     padding-bottom: 25px;
+}
+
+.bars {
+    display: flex;
+    gap: calc(3vw + 1rem);
+    align-items: flex-end;
+    position: relative;
+    /* margin-left: 250px;
+    margin-bottom: 10px; */
+}
+
+.bars::before {
+    content: "";
+    display: block;
+    height: 0.3rem;
+    width: 100%;
+    background: #4a4556;
+    border-radius: 99.9rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.bar-wrapper {
+    display: grid;
+    grid-template-rows: 15.9rem 1.6rem;
+    justify-items: center;
+    gap: 0.5rem;
+    z-index: 1;
+}
+
+.bar {
+    width: 1.5rem;
+    background: linear-gradient(180deg, #90f7ec 0%, #32ccbc 100%);
+    border-radius: 99.9rem;
+
+    height: var(--height);
+    align-self: end;
+
+    animation: up 1.4s;
+}
+
+@keyframes up {
+    0% {
+        height: 0;
+    }
+}
+
+@media (min-width: 120rem) {
+    #app {
+        grid-template-columns: 29.6rem max-content max-content;
+        grid-template-rows: max-content;
+    }
+
+    .box:nth-child(4) {
+        grid-column: 1/4;
+    }
+
+    .weekly-sell .wrapper {
+        flex-direction: row;
+    }
+
+    .weekly-sell .left {
+        grid-auto-flow: initial;
+    }
+
+    .bars {
+        gap: 5.9rem;
+    }
 }
