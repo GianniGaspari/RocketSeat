@@ -133,5 +133,14 @@ svg circle:nth-child(1) {
 
 svg circle:nth-child(2) {
     stroke-dashoffset: calc(var(--circunference) - (var(--circunference) * var(--percentage))/100);
-    stroke-linecap: round;
+    /* stroke-linecap: round; */
+
+    animation: progress 1s ease-in-out forwards;
 } 
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: var(--circunference);
+        stroke-dashoffset: var(--circunference);
+    }
+}
