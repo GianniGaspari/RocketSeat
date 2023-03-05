@@ -12,50 +12,147 @@
 </head>
 <body>
     <main id="app" class="grid">
-        <div class="box nps grid">
-            <div class="top">
+        <div class="box nps grid expand1">
+            <div class="top text-center">
                 NPS GERAL
             </div>
-            <div class="middle grid">
-                <img src="./assets/smile.svg" alt="Green ball smiling">
+            <div class="middle grid expand3">
+                <img class="expand3" src="./assets/smile.svg" alt="Green ball smiling">
                 Excelente!
             </div>
-            <div class="bottom">
+            <div class="bottom expand2">
                 <span>NPS Score</span>
                 <span>75</span>
             </div>
         </div>
-        <div class="box sell grid">
-            <div class="top">Vendas fechadas</div>
-            <div class="middle"></div>
-            <div class="bottom">
-                <div class="item">
-                    <span>Esperado</span>
-                    <span>10</span>
+        <div class="box sell grid expand1">
+            <div class="top text-center text-center">Vendas fechadas</div>
+            <div class="middle">
+                <svg viewBox="0 0  232 232"
+                style="--percentage: 70">
+                    <circle
+                    cx="50%" cy="50%"
+                    r="98.5"
+                    opacity="0.15"
+                    stroke="#D9D9D9"
+                    />
+                    <circle
+                    cx="50%" cy="50%"
+                    r="98.5"
+                    stroke="url(#paint0_linear_201_85)"
+                    />
+                    <defs>
+                        <linearGradient id="paint0_linear_201_85" x1="-9" y1="82" x2="145" y2="178" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#CE9FFC"/>
+                        <stop offset="1" stop-color="#7367F0"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="content">
+                    <h3>70%</h3>
+                    <p>alcançada</p>
                 </div>
-                <div class="item">
-                    <span>Alcançado</span>
+            </div>
+            <div class="bottom">
+                <div class="item expand2">
+                    <span>Esperado</span>
+                    <span>100</span>
+                </div>
+                <div class="item expand2">
+                    <span
+                    style="--bg-color: linear-gradient(121.94deg, #CE9FFC 15.98%, #7367F0 82.85%);"
+                    >Alcançado</span>
                     <span>70</span>
                 </div>
             </div>
         </div>
-        <div class="box target grid">
-            <div class="top">Meta mensal</div>
-            <div class="middle"></div>
+        <div class="box target grid expand1">
+            <div class="top text-center">Meta mensal</div>
+            <div class="middle">
+                <svg viewBox="0 0  232 232"
+                style="--percentage: 90">
+                    <circle
+                    cx="50%" cy="50%"
+                    r="98.5"
+                    opacity="0.15"
+                    stroke="#D9D9D9"
+                    />
+                    <circle
+                    cx="50%" cy="50%"
+                    r="98.5"
+                    stroke="url(#paint0_linear_201_104)"
+                    />
+                    <defs>
+                        <linearGradient id="paint0_linear_201_104" x1="1.97421e-07" y1="82" x2="154" y2="178" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#DF9780"/>
+                        <stop offset="1" stop-color="#A66DE9"/>
+                        </linearGradient>
+                        </defs>
+                </svg>
+                <div class="content">
+                    <h3>90%</h3>
+                    <p>alcançada</p>
+                </div>
+            </div>
             <div class="bottom">
-                <div class="item">
+                <div class="item expand2">
                     <span>Esperado</span>
                     <span>R$ 70K</span>
                 </div>
-                <div class="item">
-                    <span>Alcançado</span>
+                <div class="item expand2">
+                    <span
+                    style="--bg-color: linear-gradient(121.94deg, #DF9780 15.98%, #A66DE9 82.85%);"
+                    >Alcançado</span>
                     <span>R$ 63K</span>
                 </div>
             </div>
         </div>
-        <!-- <div class="box">
-            
-        </div> -->
+        <div class="box weekly-sell expand1">
+            <div class="top pad">Vendas por dia da semana</div>
+            <div class="wrapper">
+                <div class="left grid">
+                    <div class="most-sold grid expand2">
+                        <span>Dia com mais vendas</span>
+                        Quarta-feira
+                    </div>
+                    <div class="least-sold grid expand2">
+                        <span>Dia com menos vendas</span>
+                        Domingo
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="bars">
+                        <div class="bar-wrapper">
+                            <div class="bar expand2" style="--height: 3.9rem"></div>
+                            <span>dom</span>
+                        </div>
+                        <div class="bar-wrapper">
+                            <div class="bar expand2" style="--height: 11.5rem"></div>
+                            <span>seg</span>
+                        </div>
+                        <div class="bar-wrapper">
+                            <div class="bar expand2" style="--height: 7.6rem"></div>
+                            <span>ter</span>
+                        </div>
+                        <div class="bar-wrapper">
+                            <div class="bar expand2" style="--height: 15.9rem"></div>
+                            <span>qua</span>
+                        </div>
+                        <div class="bar-wrapper">
+                            <div class="bar expand2" style="--height: 12.9rem"></div>
+                            <span>qui</span>
+                        </div>
+                        <div class="bar-wrapper">
+                            <div class="bar expand2" style="--height: 12rem"></div>
+                            <span>sex</span>
+                        </div>
+                        <div class="bar-wrapper">
+                            <div class="bar expand2" style="--height: 6.9rem"></div>
+                            <span>sab</span>
+                        </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>

@@ -235,8 +235,8 @@ svg circle:nth-child(2) {
     gap: calc(3vw + 1rem);
     align-items: flex-end;
     position: relative;
-    /* margin-left: 250px;
-    margin-bottom: 10px; */
+    margin-left: 250px;
+    margin-bottom: 10px;
 }
 
 .bars::before {
